@@ -1,0 +1,170 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.contain {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+@media all and (max-width: 1150px) {
+  .btn{
+    height: 150px;
+    width: 150px;
+    border: 8px solid black;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .contain {
+    width: 90%;
+  }
+  .btn{
+    height: 110px;
+    width: 110px;
+    border: 8px solid black;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .contain {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.frost {
+  backdrop-filter: blur(20px);
+}
+
+.frost::before{
+  content: ' ';
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  filter: blur(20px);
+}
+
+.h2p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.h2p-btn {
+  margin: 30px 0;
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: moccasin;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+}
+
+#forModal {
+  display: none;
+}
+
+#forModal:not(:checked) ~ .modal-pop {
+  display: none;
+}
+
+#forModal:checked ~ .modal-pop {
+  display: flex;
+  max-width: 550px;
+  position: fixed;
+  top: 220px;
+  border: 2px solid cornflowerblue;
+  background-color: hsl(255, 100%, 100%, 0.7);
+  padding: 10px 26px;
+  border-radius: 7px;
+  box-shadow: dimgrey 1px 1px 3px 3px;
+}
+/*
+#forModal:checked ~ .modal-pop::before {
+  content: ' ';
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  filter: blur(8px);
+  z-index: -1;
+} */
+
+h3 {
+  font-size: 30px;
+  text-align: left;
+  margin: 12px 0;
+}
+
+.rulebook {
+  font-size: 20px;
+  text-align: left;
+  color: black;
+}
+
+.hor-rule {
+  margin: 0;
+  border: solid;
+  border-width: 1px 0 0 0;
+  border-color: midnightblue;
+  width: calc(100% + 28px + 28px);
+  position: relative;
+  left: -28px;
+}
+
+.modal-foot {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.close-btn {
+  margin: 10px 0 0;
+  padding: 7px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: lightskyblue;
+  font-size: 18px;
+}

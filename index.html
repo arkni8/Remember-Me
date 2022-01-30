@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="contain">
+    <div class="row">
+      <div type="button" id="green" class="btn green">
+      </div>
+      <div type="button" id="red" class="btn red">
+      </div>
+    </div>
+
+    <div class="row">
+      <div type="button" id="yellow" class="btn yellow">
+      </div>
+      <div type="button" id="blue" class="btn blue">
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="h2p">
+    <input type="checkbox" id="forModal">
+    <label class="h2p-btn" for="forModal">How to play</label>
+
+    <div class="modal-pop">
+        <div class="modal-dialog">
+          <div class="modal-head">
+            <h3>How to Play</h3>
+          </div>
+          <hr class="hor-rule">
+          <div class="modal-body">
+            <p class="rulebook">The game is simple. Remember the sequence of the flashing buttons, press them in correct sequence.</p>
+            <p class="rulebook">Everytime a new level starts, one new button will flash. Your job is to press the buttons that have flashed
+              in prior levels in the correct order + the new button of new level.</p>
+          </div>
+          <hr class="hor-rule">
+          <div class="modal-foot">
+            <label class="close-btn" for="forModal">Close</label>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>
