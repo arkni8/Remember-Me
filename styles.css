@@ -16,7 +16,7 @@ body {
   margin: auto;
 }
 
-.btn {
+.contain .btn {
   margin: 25px;
   display: inline-block;
   height: 200px;
@@ -44,11 +44,12 @@ body {
   }
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 750px) {
   .contain {
     display: block;
     width: 80%;
     margin: auto;
+    padding: 0;
   }
 }
 
@@ -77,6 +78,9 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+
+// Modal CSS for popup
 
 .frost {
   backdrop-filter: blur(20px);
